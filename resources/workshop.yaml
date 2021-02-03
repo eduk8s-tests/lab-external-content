@@ -1,17 +1,16 @@
 apiVersion: training.eduk8s.io/v1alpha2
 kind: Workshop
 metadata:
-  name: lab-markdown-sample
+  name: lab-external-content
 spec:
-  title: Markdown Sample
-  description: A sample workshop using Markdown
+  title: External Content
+  description: Workshop demonstrating use of external workshop content.
   vendor: eduk8s.io
   difficulty: beginner
   duration: 15m
-  url: https://github.com/eduk8s/lab-markdown-sample
+  url: https://github.com/eduk8s-tests/lab-external-content
   content:
-    #image: quay.io/eduk8s/lab-markdown-sample:master
-    files: github.com/eduk8s/lab-markdown-sample
+    files: github.com/eduk8s/lab-external-content
   session:
     namespaces:
       budget: small
@@ -23,3 +22,6 @@ spec:
         enabled: true
       editor:
         enabled: true
+    env:
+    - name: EXTERNAL_CONTENT
+      value: https://docs.edukates.io/
