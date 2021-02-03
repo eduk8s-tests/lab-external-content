@@ -10,7 +10,7 @@ spec:
   duration: 15m
   url: https://github.com/eduk8s-tests/lab-external-content
   content:
-    files: github.com/eduk8s/lab-external-content
+    files: github.com/eduk8s-tests/lab-external-content
   session:
     namespaces:
       budget: small
